@@ -1,0 +1,416 @@
+body {
+    margin: 0;
+}
+:root{
+    --basic-color:rgb(243, 76, 104);
+}
+header {
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    & .logo a {
+        font-family: "Sour Gummy", sans-serif;
+        font-size: 22px;
+        color: white;
+        text-decoration: none;
+
+        & #make {
+            color: var(--basic-color);
+            font-family: "Dancing Script";
+            font-size: 30px;
+        }
+
+        & span {
+            padding: 20px;
+            margin-block: 10px;
+        }
+    }
+
+    & ul {
+        font-family: "Lexend Deca", sans-serif;
+        list-style: none;
+        & li {
+            display: inline-block;
+            margin-inline: 10px;
+
+            & a {
+                padding: 5px;
+                color: white;
+                text-decoration: none;
+            }
+            & a:hover{
+                color: var(--basic-color);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.index{
+    width: 100vw;
+    height: 80vh;
+    background: url(makeup/composition-arranged-cosmetics-women.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &>div{
+        font-family:  "Paytone One", sans-serif ;
+        color: rgb(105, 1, 105);
+        text-transform: uppercase;
+        font-size: 32px;
+        margin-inline-start: 70%;
+        display: inline-block;
+        & .name{
+            font-family:  "Paytone One", sans-serif;
+            margin-left: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.611);
+            position: absolute;
+            top: 55px;
+            font-size: 28px;
+        }
+        &>span{
+            margin-left: 30px;
+            font-size: 25px;
+            margin-top: 85px;
+        }
+        & img{
+            margin-top: -40px;
+            height: 55vh;
+            border-radius: 50px;
+            margin-bottom: 10px;
+        }
+    }    
+    & a{
+        color: var(--basic-color);
+        position: relative;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 20px;
+        border: 1px solid var(--basic-color);
+        padding: 10px 25px;
+        margin-left: 70px;
+        border-radius: 20px;
+    }
+    & a:hover{
+        background: var(--basic-color);
+        color: white;
+        transition: all 0.5s ease 0s;
+    }
+}
+.about-box{
+    font-family: "Mukta", sans-serif;
+    height: 60vh;
+    background: black;
+    margin-top: -22px;
+    display: flex;
+    color: white;
+    align-items: flex-start;
+    & div{
+        width: 50%;
+        & img{
+            height: 50vh;
+            margin-left: 120px;
+            margin-top: 40px;
+            border-radius: 20px;
+        }
+        & h1{
+            font-family:  "Paytone One", sans-serif ;
+            font-weight: 10;
+            color: rgb(190, 21, 190);
+            margin-left: -100px;
+            text-decoration: underline 1px solid rgb(105, 1, 105);
+        }
+        & h2{
+            font-family:  "Paytone One", sans-serif ;
+            font-weight: normal;
+            margin-left: -100px;
+            color: var(--basic-color);
+        }
+        & p{
+            text-align: justify;
+            margin-left: -100px;
+            padding-right: 50px;
+            line-height: 30px;
+        }
+    }
+}
+.services{
+    margin-top: -25px;
+    height: auto;
+    background: rgba(93, 91, 91,0.5);
+    h3{
+        font-family: "Sour Gummy", sans-serif;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 25px;
+        margin-bottom: -10px;
+    }
+    h1{
+        font-family: "Mukta", sans-serif;
+        text-align: center;
+        color: rgb(76, 12, 139);
+        text-transform: uppercase;
+    }
+    .photos {
+        object-fit: cover;
+        display: flex;
+        margin-inline-start:320px;
+        gap: 0px;
+        flex-wrap: wrap;
+        & div{
+            width: 45%;
+            img{
+                width: 60%;
+                border-radius:20px ;
+            }
+            h2{
+                font-family: "Lexend Deca", sans-serif;
+                text-transform: capitalize;
+                color: var(--basic-color);
+                font-size: 30px;
+                margin-bottom: 50px;
+                text-decoration: underline 1px solid var(--basic-color);
+            }
+        }
+    }
+}
+.service-table{
+    background: black;
+    height: 70vh;
+    display: flex;
+    & #model{
+        width: 50vw;
+        img{
+            width: 45%;
+            filter: grayscale(1);
+            margin: 40px;
+        }
+    }
+    & #list{
+        font-size: 18px;
+        font-family: "Sour Gummy", sans-serif;
+        margin-block: 40px;
+        display: flex;
+        color: rgb(196, 85, 124);
+        gap: 100px;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+}
+.price-list{
+    margin-top: -50px;
+    height: 60vh;
+    background: var(--basic-color);
+    text-align: center;
+    h3{
+        padding-top: 20px;
+        font-size: 30px;
+        font-family: "Mukta", sans-serif;
+        text-transform: uppercase;
+    }
+    h1{
+        text-transform: uppercase;
+        font-family: "Mukta", sans-serif;
+        margin-top: -40px;
+        font-size: 40px;
+    }
+
+    ul{
+        list-style: none;
+            li{
+                
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+            font-size: 25px;
+            span{
+                font-family: "Sour Gummy", sans-serif;
+                font-size: 30px;
+                font-weight: bold;
+                margin-inline-end: 40px;
+                margin-block: 10px;
+            }
+        }
+    }
+}
+.haircut{
+    margin-top: -50px;
+    height: 60vh;
+    background: black;
+    color: var(--basic-color);
+    text-align: center;
+    h1{
+        padding-top:20px ;
+        font-size: 50px;
+        font-family: "Mukta", sans-serif;
+    }
+    ul{
+        list-style: none;
+            li{
+                
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+            font-size: 25px;
+            span{
+                font-family: "Sour Gummy", sans-serif;
+                font-size: 30px;
+                font-weight: bold;
+                margin-inline-end: 40px;
+                margin-block: 10px;
+            }
+        }
+    }
+}
+.gallery{
+    color: var(--basic-color);
+    height: auto;
+    margin-top: -40px;
+    background: black;
+    text-align: center;
+    padding-bottom: 40px;
+    h3{
+        font-family: "Lexend Deca", sans-serif;
+        font-size: 35px;
+    }
+    h1{
+        font-family: "Lexend Deca", sans-serif;
+        padding-left: 90px;
+        text-align: left;
+        margin-top: -10px;
+        font-size: 35px;
+    }
+    .images{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-inline: 5%;
+        & img{
+            margin-block: 10px;
+            border-radius: 20px;
+            width: 33%;
+        }
+    }
+}
+.reviews{
+    height: 60vh;
+    background: rgba(93, 91, 91,0.5);
+    text-align: center;
+    padding-top: 10px;
+    display: flex;
+    & div{
+        width: 40%;
+        img{
+            margin-top: 30px;
+           width: 50%;
+           margin-left: 50px;
+           border-radius: 20px; 
+        }
+    }
+    h1{
+        font-family: "Lexend Deca", sans-serif;
+        padding: 10px;
+    }
+    p{
+        font-family: "Mukta", sans-serif;
+        line-height: 25px;
+        margin: 0 auto;
+        width: 60%;
+        text-align: justify;
+    }
+    h3{
+        font-family: "Mukta", sans-serif;
+        font-size: 25px;
+        text-align: center;
+    }
+}
+.information{
+    height: 40vh;
+    background: rgb(214, 115, 214);
+    margin-top: -30px;
+    h3{
+        font-family: "Lexend Deca", sans-serif;
+        padding-top: 20px;
+        padding-left: 10px;
+        font-size: 30px;
+    }
+    h1{
+        font-family: "Lexend Deca", sans-serif;
+        text-align: center;
+        margin-top: -50px;
+    }
+    p{
+        font-family: "Mukta", sans-serif;
+        width: 30%;
+        margin: 0 auto;
+        font-size: 25px;
+    }
+    .info{
+        display: flex;
+        justify-content: space-evenly;
+        font-family: "Sour Gummy", sans-serif;
+        text-align: center;
+        margin-block: 30px;
+        margin-bottom: 20px;
+    }
+
+}
+.message-box{
+    font-family: "Lexend Deca", sans-serif;
+    height: 50vh;
+    background: black;
+    color: white;
+    margin-top: -20px;
+    text-align: center;
+    padding: 15px;
+    form{
+        input{
+            font-family:  "Mukta", sans-serif;;
+            background: none;
+            border: 0px;
+            margin-block: 10px;
+            width: 50%;
+            border-bottom: 2px solid grey;
+            &::placeholder{
+                color: white;
+            }
+        }
+        input:focus{
+            outline: none;
+            caret-color: white;
+            color: white;
+        }
+        .button{
+            color: var(--basic-color);
+            text-decoration: none;
+            padding: 5px 25px;
+            border-radius: 5px;
+            border: 1px solid var(--basic-color);
+        }     
+        .button:hover{
+            background-color: var(--basic-color);
+            color: #000;
+            transition: all 0.5s ease 0s;
+        }   
+    }
+}
+footer{
+    background: var(--basic-color);
+    color: #000;
+    font-family: "Lexend Deca", sans-serif;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
